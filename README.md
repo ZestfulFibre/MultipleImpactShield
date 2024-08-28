@@ -5,6 +5,7 @@ A shader and accompanying code for making shield effects that react to multiple 
 
 Based on concepts covered in this video: https://youtu.be/NeZcAYJdkv4
 
+
 The core idea is simple: pass to the shader a uniform array of Vector4s representing impacts, use the xyz of this vector to refer to the location of the impact, and the w as a measure of the age of the impact.
 
 The shader knows only these things, it's the responsibility of the shield object to add impacts to the array, and to decay them over time by modifying the w value.
